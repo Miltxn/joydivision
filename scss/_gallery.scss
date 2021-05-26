@@ -1,0 +1,13 @@
+.photo-gallery {
+    color:#313437;
+    background-color: $primaryColor;
+
+    .item {
+        padding-bottom: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

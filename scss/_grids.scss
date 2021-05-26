@@ -1,0 +1,180 @@
+.gridContainerHome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas: "img1 img1 img1 img1"
+                        "brief brief brief brief"
+                        "img2 img2 text1 text1"
+                        "text2 text2 text2 text2"
+                        "text3 text3 img3 img3"
+                        "text4 text4 text4 text4"
+                        "img4 img4 text5 text5"
+                        "text6 text6 text6 text6"
+                        "text7 text7 img5 img5"
+                        "text8 text8 text8 text8"
+                        "img6 img6 text9 text9"
+                        "text10 text10 text10 text10";
+    }
+
+.brief {
+    grid-area: brief;
+    border-radius: 10px;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.text4 {
+    grid-area: text4;
+}
+
+.text5 {
+    grid-area: text5;
+}
+
+.text6 {
+    grid-area: text6;
+}
+
+.text7 {
+    grid-area: text7;
+}
+
+.text8 {
+    grid-area: text8;
+}
+
+.text9 {
+    grid-area: text9;
+}
+
+.text10 {
+    grid-area: text10;
+}
+
+.gridContainerAlbum {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas: ". cover1 cover1 ."
+                            "text1 text1 text1 text1"
+                            ". cover2 cover2 ."
+                            "text2 text2 text2 text2"
+                            ". cover3 cover3 ."
+                            "text3 text3 text3 text3";
+}
+
+.cover1 {
+    grid-area: cover1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover2 {
+    grid-area: cover2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover3 {
+    grid-area: cover3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridContainerAlbumOther {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas: "cover1 cover1 text1 text1"
+                            "cover1 cover1 text2 text2"
+                            "text3 text3 cover2 cover2"
+                            "text4 text4 cover2 cover2"
+                            "cover3 cover3 text5 text5"
+                            "cover3 cover3 text6 text6";
+}
+
+.albumCover {
+    text-align: right;
+    max-width: 30rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .gridContainerHome {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "img1"
+                                "brief"
+                                "img2"
+                                "text1"
+                                "text2"
+                                "img3"
+                                "text3"
+                                "text4"
+                                "img4"
+                                "text5"
+                                "text6"
+                                "img5"
+                                "text7"
+                                "text8"
+                                "img6"
+                                "text9"
+                                "text10";
+    }
+}
